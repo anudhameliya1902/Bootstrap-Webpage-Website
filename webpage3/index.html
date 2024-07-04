@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"
+        integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"
+        integrity="sha512-+/4Q+xH9jXbMNJzNt2eMrYv/Zs2rzr4Bu2thfvzlshZBvH1g+VGP55W8b6xfku0c0KknE7qlbBPhDPrHFbgK4g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <!-- bootstrap -->
+
+
+    <!-- Fonrawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Fonrawesome -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+        integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      />
+
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand ps-5" href="#"><img src="img/logo.avif" alt="" srcset=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-center" style="margin-left: 180px;">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark  fw-semibold pe-4" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark fw-semibold pe-4" href="#">Shop</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link text-dark fw-semibold pe-4">Product</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark fw-semibold pe-4">Deal Zone</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link text-dark fw-semibold pe-4 ">Pages</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link text-dark fw-semibold pe-4 ">Blog</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link text-dark fw-semibold pe-4 ">Buy Now</a>
+                        </li>
+                    </ul>
+
+
+
+                </div>
+
+                <div id="icon">
+                    <i class="fa-solid fa-magnifying-glass pe-4"></i>
+                    <i class="fa-solid fa-user pe-4"></i>
+                    <i class="fa-regular fa-heart pe-4"></i>
+                    <i class="fa-solid fa-cart-shopping pe-4"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- hero -->
+
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" id="hero1">
+
+                <div id="con" class=" wow animate__animated  animate__backInDown">
+                    <h5 class="fs-2" style="color: #4dadb5;">UP TO 70% off</h5>
+                    <h1 class="display-4">BASIC WARDROBE</h1>
+                    <h2 class="display-2 fw-bold">ESSENTIALS</h2>
+                    <button>Shop Now</button>
+                </div>
+
+            </div>
+            <div class="carousel-item" id="hero2">
+                <div id="con" class=" wow animate__backInDown">
+                    <h5 class="fs-2" style="color: #4dadb5;">UP TO 70% off</h5>
+                    <h1 class="display-4">BASIC WARDROBE</h1>
+                    <h2 class="display-2 fw-bold">ESSENTIALS</h2>
+                    <button>Shop Now</button>
+                </div>
+            </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" style="margin-top: 450px;" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon " style="margin-top: 450px;" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- hero -->
+
+
+    <!-- arrivals -->
+
+    <div id="arrivals">
+        <div class="container-fluid">
+
+            <h2 class="mt-5 text-center">NEW ARRIVALS</h2>
+
+            <div class="text-center mt-4 mb-5">
+                <span class="ps-4 pb-5">Women</span>
+                <span class="ps-4 pb-5">Men</span>
+                <span class="ps-4 pb-5">Accessories</span>
+                <span class="ps-4 pb-5">Sale</span>
+            </div>
+
+            <div class="row">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="rounded-0" id="c1">
+                                <img src="img/arivals/ar1.jpg" class="card-img-top" id="a1" alt="...">
+                                <img src="img/arivals/ar11.jpg" class="card-img-top" id="a2" alt="" srcset="">
+
+                                <div id="icon1">
+                                    <i class="fa-regular fa-heart fs-5 pt-4"></i>
+                                    <i class="fa-solid fa-cart-shopping fs-5 pt-4"></i>
+                                    <i class="fa-regular fa-heart fs-5 pt-4"></i>
+                                </div>
+
+
+                                <div class="mt-4" <h6 class="card-title fs-6 fw-semibold">Long Maxi Dress</h6>
+                                    <p class="card-text">Rs. 5,900.00 </p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="swiper-slide">
+                            <div class="rounded-0" id="c1">
+                                <img src="img/arivals/ar2.jpg" class="card-img-top" id="a1" alt="...">
+                                <img src="img/arivals/ar22.jpg" class="card-img-top" id="a2" alt="" srcset="">
+
+                                <div id="icon1">
+                                    <i class="fa-regular fa-heart fs-5 pt-4"></i>
+                                    <i class="fa-solid fa-cart-shopping fs-5 pt-4"></i>
+                                    <i class="fa-regular fa-heart fs-5 pt-4"></i>
+                                </div>
+
+
+                                <div class="mt-4" <h6 class="card-title fs-6 fw-semibold">Long Maxi Dress</h6>
+                                    <p class="card-text">Rs. 5,900.00 </p>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="swiper-slide">
+                            <div class="rounded-0" id="c1">
+                                <img src="img/arivals/ar3.jpg" class="card-img-top" id="a1" alt="...">
+                                <img src="img/arivals/ar33.jpg" class="card-img-top" id="a2" alt="" srcset="">
+
+                                <div id="icon1">
+                                    <i class="fa-regular fa-heart fs-5 pt-4"></i>
+                                    <i class="fa-solid fa-cart-shopping fs-5 pt-4"></i>
+                                    <i class="fa-regular fa-heart fs-5 pt-4"></i>
+                                </div>
+
+
+                                <div class="mt-4" <h6 class="card-title fs-6 fw-semibold">Long Maxi Dress</h6>
+                                    <p class="card-text">Rs. 5,900.00 </p>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="swiper-slide">
+                            <div class="rounded-0" id="c1">
+                                <img src="img/arivals/ar4.jpg" class="card-img-top" id="a1" alt="...">
+                                <img src="img/arivals/ar44.jpg" class="card-img-top" id="a2" alt="" srcset="">
+
+                                <div id="icon1">
+                                    <i class="fa-regular fa-heart fs-5 pt-4"></i>
+                                    <i class="fa-solid fa-cart-shopping fs-5 pt-4"></i>
+                                    <i class="fa-regular fa-heart fs-5 pt-4"></i>
+                                </div>
+
+
+                                <div class="mt-4" <h6 class="card-title fs-6 fw-semibold">Long Maxi Dress</h6>
+                                    <p class="card-text">Rs. 5,900.00 </p>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="swiper-slide">
+                            <div class="rounded-0" id="c1">
+                                <img src="img/arivals/ar5.jpg" class="card-img-top" id="a1" alt="...">
+                                <img src="img/arivals/ar55.jpg" class="card-img-top" id="a2" alt="" srcset="">
+
+                                <div id="icon1">
+                                    <i class="fa-regular fa-heart fs-5 pt-4"></i>
+                                    <i class="fa-solid fa-cart-shopping fs-5 pt-4"></i>
+                                    <i class="fa-regular fa-heart fs-5 pt-4"></i>
+                                </div>
+
+
+                                <div class="mt-4" <h6 class="card-title fs-6 fw-semibold">Long Maxi Dress</h6>
+                                    <p class="card-text">Rs. 5,900.00 </p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- arrivals -->
+
+
+    <!-- Customer -->
+
+    <div id="coustomer">
+
+        <h6 class="fs-2 text-center pt-5">Happy Customers</h6>
+
+        <div class="container-fluid">
+            <div class="row">
+
+                <div class=" col-sm-12 col-md-6 col-lg-4 mt-4 wow animate__animated animate__fadeInLeft ">
+                    <div class="card rounded-0 shadow" style="border: none;">
+                        <img src="img/c1.jpg" class="mt-3 ms-3" id="cusa1">
+                        <div class="card-body">
+
+                            <h1 class="card-title fs-5">Feature Availability</h1>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <p class="card-text pt-3">Like Avone, Optimal is just as feature rich and highly
+                                customisable. I love using these guys themes.</p>
+                            <p class="fw-bold">Coriss Ambady</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class=" col-sm-12 col-md-6 col-lg-4 mt-4 wow animate__animated animate__fadeInDownBig ">
+                    <div class="card rounded-0 shadow" style="border: none;">
+                        <img src="img/c2.jpg" class="mt-3 ms-3" id="cusa1">
+                        <div class="card-body">
+
+                            <h1 class="card-title fs-5">Feature Availability</h1>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <p class="card-text pt-3">Like Avone, Optimal is just as feature rich and highly
+                                customisable. I love using these guys themes.</p>
+                            <p class="fw-bold">Coriss Ambady</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class=" col-sm-12 col-md-6 col-lg-4 mt-4 wow animate__animated animate__fadeInRight ">
+                    <div class="card rounded-0 shadow" style="border: none;">
+                        <img src="img/c3.jpg" class="mt-3 ms-3" id="cusa1">
+                        <div class="card-body">
+
+                            <h1 class="card-title fs-5">Feature Availability</h1>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <p class="card-text pt-3">Like Avone, Optimal is just as feature rich and highly
+                                customisable. I love using these guys themes.</p>
+                            <p class="fw-bold">Coriss Ambady</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class=" col-sm-12 col-md-6 col-lg-4 mt-4 wow animate__animated animate__fadeInLeft  ">
+                    <div class="card rounded-0 shadow" style="border: none;">
+                        <img src="img/c4.jpg" class="mt-3 ms-3" id="cusa1">
+                        <div class="card-body">
+
+                            <h1 class="card-title fs-5">Feature Availability</h1>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <p class="card-text pt-3">Like Avone, Optimal is just as feature rich and highly
+                                customisable. I love using these guys themes.</p>
+                            <p class="fw-bold">Coriss Ambady</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class=" col-sm-12 col-md-6 col-lg-4 mt-4 wow  wow animate__animated animate__fadeInUpBig">
+                    <div class="card rounded-0 shadow" style="border: none;">
+                        <img src="img/c1.jpg" class="mt-3 ms-3" id="cusa1">
+                        <div class="card-body">
+
+                            <h1 class="card-title fs-5">Feature Availability</h1>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <p class="card-text pt-3">Like Avone, Optimal is just as feature rich and highly
+                                customisable. I love using these guys themes.</p>
+                            <p class="fw-bold">Coriss Ambady</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-sm-12 col-md-6 col-lg-4 mt-4 wow animate__animated  animate__fadeInRight">
+                    <div class="card rounded-0 shadow" style="border: none;">
+                        <img src="img/c2.jpg" class="mt-3 ms-3" id="cusa1">
+                        <div class="card-body">
+
+                            <h1 class="card-title fs-5">Feature Availability</h1>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <p class="card-text pt-3">Like Avone, Optimal is just as feature rich and highly
+                                customisable. I love using these guys themes.</p>
+                            <p class="fw-bold">Coriss Ambady</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <!-- Customer -->
+
+
+    <!-- arrivals -->
+
+    <div id="arrivals">
+        <div class="container-fluid">
+
+            <h2 class="mt-5 text-center">SHOP OUR FAVES</h2>
+
+            <div class="text-center mt-4 mb-5">
+                <span class="ps-4 pb-5">Women</span>
+                <span class="ps-4 pb-5">Men</span>
+                <span class="ps-4 pb-5">Accessories</span>
+                <span class="ps-4 pb-5">Sale</span>
+            </div>
+
+            <div class="row">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="rounded-0" id="c1">
+                                <img src="img/arivals/AF1.jpg" class="card-img-top" id="a1" alt="...">
+                                <img src="img/arivals/AF11.jpg" class="card-img-top" id="a2" alt="" srcset="">
+
+                                <div id="icon1">
+                                    <i class="fa-regular fa-heart fs-5 pt-4"></i>
+                                    <i class="fa-solid fa-cart-shopping fs-5 pt-4"></i>
+                                    <i class="fa-regular fa-heart fs-5 pt-4"></i>
+                                </div>
+
+
+                                <div class="mt-4" <h6 class="card-title fs-6 fw-semibold">Long Maxi Dress</h6>
+                                    <p class="card-text">Rs. 5,900.00 </p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="swiper-slide">
+                            <div class="rounded-0" id="c1">
+                                <img src="img/arivals/AF2.jpg" class="card-img-top" id="a1" alt="...">
+                                <img src="img/arivals/AF22.jpg" class="card-img-top" id="a2" alt="" srcset="">
+
+                                <div id="icon1">
+                                    <i class="fa-regular fa-heart fs-5 pt-4"></i>
+                                    <i class="fa-solid fa-cart-shopping fs-5 pt-4"></i>
+                                    <i class="fa-regular fa-heart fs-5 pt-4"></i>
+                                </div>
+
+
+                                <div class="mt-4" <h6 class="card-title fs-6 fw-semibold">Long Maxi Dress</h6>
+                                    <p class="card-text">Rs. 5,900.00 </p>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="swiper-slide">
+                            <div class="rounded-0" id="c1">
+                                <img src="img/arivals/AF3.jpg" class="card-img-top" id="a1" alt="...">
+                                <img src="img/arivals/AF33.jpg" class="card-img-top" id="a2" alt="" srcset="">
+
+                                <div id="icon1">
+                                    <i class="fa-regular fa-heart fs-5 pt-4"></i>
+                                    <i class="fa-solid fa-cart-shopping fs-5 pt-4"></i>
+                                    <i class="fa-regular fa-heart fs-5 pt-4"></i>
+                                </div>
+
+
+                                <div class="mt-4" <h6 class="card-title fs-6 fw-semibold">Long Maxi Dress</h6>
+                                    <p class="card-text">Rs. 5,900.00 </p>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="swiper-slide">
+                            <div class="rounded-0" id="c1">
+                                <img src="img/arivals/AF4.jpg" class="card-img-top" id="a1" alt="...">
+                                <img src="img/arivals/AF44.jpg" class="card-img-top" id="a2" alt="" srcset="">
+
+                                <div id="icon1">
+                                    <i class="fa-regular fa-heart fs-5 pt-4"></i>
+                                    <i class="fa-solid fa-cart-shopping fs-5 pt-4"></i>
+                                    <i class="fa-regular fa-heart fs-5 pt-4"></i>
+                                </div>
+
+
+                                <div class="mt-4" <h6 class="card-title fs-6 fw-semibold">Long Maxi Dress</h6>
+                                    <p class="card-text">Rs. 5,900.00 </p>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="swiper-slide">
+                            <div class="rounded-0" id="c1">
+                                <img src="img/arivals/ar5.jpg" class="card-img-top" id="a1" alt="...">
+                                <img src="img/arivals/ar55.jpg" class="card-img-top" id="a2" alt="" srcset="">
+
+                                <div id="icon1">
+                                    <i class="fa-regular fa-heart fs-5 pt-4"></i>
+                                    <i class="fa-solid fa-cart-shopping fs-5 pt-4"></i>
+                                    <i class="fa-regular fa-heart fs-5 pt-4"></i>
+                                </div>
+
+
+                                <div class="mt-4" <h6 class="card-title fs-6 fw-semibold">Long Maxi Dress</h6>
+                                    <p class="card-text">Rs. 5,900.00 </p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- arrivals -->
+
+    <!-- Off -->
+
+    <div id="off">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-lg-6 mt-5 wow animate__animated animate__fadeInLeft">
+                    <div class="card">
+                        <div class="card-body d-flex flex-column justify-content-center align-items-center " id="off1">
+
+                            <h3 class="fs-1">JUST IN</h3>
+                            <h1 class="display-2 fw-bold">25% OFF</h1>
+                            <button class="mt-4">Shop Now</button>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-lg-6 mt-5 wow animate__animated animate__fadeInRight">
+                    <div class="card">
+                        <div class="card-body" id="off2">
+                            <div class="offcon">
+                                <h1 class="fs-5 fw-semibold">EVERUDAY FAVOURITE</h1>
+                                <h6>Exclusive Only For You</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Off -->
+
+    <!-- Blog -->
+
+    <div id="blog">
+        <h1 class="text-center fs-3">LATEST FORM BLOG</h1>
+        <h6 class="text-center fs-4">The freshest and most exciting news</h6>
+
+
+        <div class="container-fluid">
+
+            <div class="row">
+                <div class=" col-sm-12 col-md-4 mt-4 wow animate__animated animate__fadeInDownBig">
+                    <div class="card rounded-0">
+                        <img src="img/b1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Fresh work outfits for new year</h5>
+                            <p class="card-text">Even though winter is coming to an end, it's never too late to jump on
+                                the winter wear fashion bandwagon. Winter is many people’s favorite...</p>
+                            <a href="#" class="card-link" style="color: black;">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class=" col-sm-12 col-md-4 mt-4 wow animate__animated animate__fadeInDownBig">
+                    <div class="card rounded-0">
+                        <img src="img/b2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Fresh work outfits for new year</h5>
+                            <p class="card-text">Even though winter is coming to an end, it's never too late to jump on
+                                the winter wear fashion bandwagon. Winter is many people’s favorite...</p>
+                            <a href="#" class="card-link" style="color: black;">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class=" col-sm-12 col-md-4 mt-4 wow animate__animated animate__fadeInDownBig">
+                    <div class="card rounded-0">
+                        <img src="img/b3.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Fresh work outfits for new year</h5>
+                            <p class="card-text">Even though winter is coming to an end, it's never too late to jump on
+                                the winter wear fashion bandwagon. Winter is many people’s favorite...</p>
+                            <a href="#" class="card-link" style="color: black;">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-5">
+                <div class=" col-sm-4 col-md-2 mt-5 mb-5">
+                    <div class="card">
+                        <img src="img/l1.jpg" class="card-img-top" alt="...">
+                    </div>
+                </div>
+
+                <div class=" col-sm-4 col-md-2 mt-5 mb-5">
+                    <div class="card">
+                        <img src="img/l2.jpg" class="card-img-top" alt="...">
+                    </div>
+                </div>
+
+                <div class=" col-sm-4 col-md-2 mt-5 mb-5">
+                    <div class="card">
+                        <img src="img/l3.jpg" class="card-img-top" alt="...">
+                    </div>
+                </div>
+
+                <div class=" col-sm-4 col-md-2 mt-5 mb-5">
+                    <div class="card">
+                        <img src="img/l4.jpg" class="card-img-top" alt="...">
+                    </div>
+                </div>
+
+                <div class=" col-sm-4 col-md-2 mt-5 mb-5">
+                    <div class="card">
+                        <img src="img/l5.jpg" class="card-img-top" alt="...">
+                    </div>
+                </div>
+
+                <div class=" col-sm-4 col-md-2 mt-5 mb-5">
+                    <div class="card">
+                        <img src="img/l6.jpg" class="card-img-top" alt="...">
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+
+    <!-- Blog -->
+
+    <!-- counter -->
+    <div id="counter">
+
+        <div class="container  pb-5 pt-5">
+
+            <div class="row d-flex justify-content-between">
+                <div class="col-sm-6 col-md-6 col-lg-3 text-center mt-4">
+                    <h1 class="counter">1000</h1>
+                    <h5 class="" style="font-size: 18px;">FREE DELIVERY</h5>
+                    <h6>For all orders over $120</h6>
+                </div>
+
+                <div class="col-sm-6 col-md-6 col-lg-3 text-center mt-4">
+                    <h1 class="counter">500</h1>
+                    <h5 class="" style="font-size: 18px;">SATISFIED OR REFUNDED</h5>
+                    <h6>For all orders over $120</h6>
+                </div>
+
+                <div class="col-sm-6 col-md-6 col-lg-3 text-center mt-4">
+                    <h1 class="counter">200</h1>
+                    <h5 class="" style="font-size: 18px;">100% SECURE PAYMENTS</h5>
+                    <h6>For all orders over $120</h6>
+                </div>
+
+                <div class="col-sm-6 col-md-6 col-lg-3 text-center mt-4">
+                    <h1 class="counter">100</h1>
+                    <h5 class="" style="font-size: 18px;">24/7 HELP CENTER</h5>
+                    <h6>For all orders over $120</h6>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- counter -->
+
+    <!-- footer  -->
+
+    <footer class="shadow">
+
+        <div class="container">
+            <div class="row pt-5 pb-5 d-flex justify-content-between">
+                <div class=" col-sm-12 col-md-4">
+                    <h2 class="pt-3 pb-3">VOGAL</h2>
+                    <p class="pe-5">A108 Adam Street
+                        New York, NY 535022
+                        United States
+                    </p>
+                    <h6>Phone: <span> +123 456 789</span></h6>
+                    <h6>Email: <span> info@exmple.com</span></h6>
+                </div>
+                <div class=" col-sm-12 col-md-2 d-flex flex-column">
+                    <h3 class="pt-3 pb-3 fs-5">Useful Links</h3>
+                    <span class="pt-3"><i class="fa-solid fa-angle-right pe-2"></i>Home</span>
+                    <span class="pt-3"><i class="fa-solid fa-angle-right pe-2"></i>About US</span>
+                    <span class="pt-3"><i class="fa-solid fa-angle-right pe-2"></i>Services</span>
+                    <span class="pt-3"><i class="fa-solid fa-angle-right pe-2"></i>Terms Of Service</span>
+                    <span class="pt-3"><i class="fa-solid fa-angle-right pe-2"></i>Privacy Policy</span>
+                </div>
+                <div class="col-sm-12 col-md-2 d-flex flex-column">
+                    <h3 class="pt-3 pb-3 fs-5">Our Services</h3>
+                    <span class="pt-3"><i class="fa-solid fa-angle-right pe-2"></i>Web Devlopment</span>
+                    <span class="pt-3"><i class="fa-solid fa-angle-right pe-2"></i>Web Design</span>
+                    <span class="pt-3"><i class="fa-solid fa-angle-right pe-2"></i> Management</span>
+                    <span class="pt-3"><i class="fa-solid fa-angle-right pe-2"></i>Marketing</span>
+                    <span class="pt-3"><i class="fa-solid fa-angle-right pe-2"></i>Graphic Design</span>
+                </div>
+                <div class="col-sm-12 col-md-3">
+                    <h3 class="pt-3 pb-3 fs-5">Join Our Newsletter</h3>
+                    <p class="">Tamen quem nulla quae legam multos legam noster magna</p>
+
+                    <input type="text" class="form-control pb-2 pt-2 mt-5" placeholder="Susbscribe">
+                </div>
+            </div>
+        </div>
+
+
+    </footer>
+
+
+    <!-- footer  -->
+
+
+
+
+
+
+
+</body>
+
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+            autoplay: {
+                delay: 1000,
+                disableOnInteraction: false,
+            },
+        },
+        breakpoints: {
+            640: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+            },
+            768: {
+                slidesPerView: 2,
+                spaceBetween: 40,
+            },
+            992: {
+                slidesPerView: 3,
+                spaceBetween: 25,
+            },
+            1200: {
+                slidesPerView: 4,
+                spaceBetween: 25,
+            },
+        },
+    });
+</script>
+
+<script>
+    $('.counter').counterUp({
+        delay: 10,
+        time: 1000
+    });
+</script>
+
+<script>
+    new WOW().init();
+</script>
+</html>
