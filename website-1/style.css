@@ -1,0 +1,203 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+#caption{
+    position: relative;
+    background-color: rgba(red, green, blue, alpha);
+}
+
+#cap-con{
+    position: absolute;
+    z-index: 1;
+    top: 150px;
+    text-align: center;
+}
+
+#serti1{
+    color:#8d8d8d ;
+}
+
+#serti{
+    font-family: "Playfair Display", serif;
+    color: black;
+}
+
+#btn{
+    background-color: #15b9d9;
+}
+
+#why i{
+    color: #15b9d9;
+}
+
+#whycard{
+    border: 1px solid #15b9d9;
+}
+#whycontent{
+    color:#8d8d8d ;
+}
+
+#best{
+    background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(img/carousel-2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#best p{
+    color:#8d8d8d ;
+}
+
+#team h5{
+  color:#efa286;
+  font-family: "Playfair Display", serif;
+} 
+
+#team h6{
+    color: #15b9d9;
+}
+
+
+#testimonial{
+    height: 700px;
+    background: linear-gradient(rgba(21, 185, 217, 0.9), rgba(21, 185, 217, 0.9)), url(img/carousel-1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#blog h5{
+    color:#15b9d9;
+    font-family: "Playfair Display", serif;
+}
+
+footer{
+    /* height: 500px; */
+    background:linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(img/carousel-2.jpg);
+    background-position: center;
+    background-size: cover;   
+    padding-bottom: 100px;
+}
+
+footer h4{
+    font-family: "Playfair Display", serif;
+}
+
+footer a{
+    text-decoration: none;
+    color: #8d8d8d;
+}
+
+#si{
+    position: relative;
+    transition: 2s;
+}
+
+#si::before{
+    content: " ";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 0%;
+    z-index: 1;
+    background-color: #15b9d9;
+    opacity: 0.4;
+    transition: 1s;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+#ser:hover #si::before{
+    height: 100%;
+}
+
+#sc{
+    position: relative;
+    z-index: 2;
+}
+
+#sc::before {
+    width: 100%;
+    height: 8px;
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background: rgba(21, 185, 217, .5);
+    transition: 0.5s;
+    z-index: 3;
+}
+
+#ser:hover #sc::before {
+    background: rgba(21, 185, 217, .5);
+    height: 100%;
+}
+
+#ser:hover #sc #serti{
+    color: #efa286;
+    z-index: 5;
+    position: relative;
+}
+#ser:hover #sc #serti1{
+    color: white;
+    z-index: 5;
+    position: relative;
+}
+
+#whycard{
+    position: relative;
+}
+
+#whycard::before{
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: #15b9d9;
+    transition: 1s;
+    z-index: 1;
+}
+
+#whycard:hover::before{
+    width: 100%;
+}
+
+#whycard:hover .icon{
+    z-index: 2;
+}
+
+#whycard:hover .feacon{
+    z-index: 3;
+}
+
+#whycard:hover #whycontent{
+    color: white;
+}
+
+#main{
+    height: 400px;
+    background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/carousel-2.jpg) ;
+    background-position: center;
+    background-size: cover;
+    font-family: "Playfair Display", serif;
+    color: white;
+
+}
+
+
+
+#contact {
+    /* height: 600px; */
+    background: linear-gradient(rgba(21, 185, 217, 0.9), rgba(21, 185, 217, 0.9)), url(../img/carousel-1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
