@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Jost", sans-serif;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 550px;
+    background-position: center;
+    background-size: cover;
+}
+
+#hero{
+    position: relative;
+}
+
+.hcon{
+    width: 500px;
+    position: absolute;
+    top: 150px  ;
+    left: 31%;
+    font-family: "Jost", sans-serif;
+}
+
+.hcon h1{
+    font-size: 100px;
+} 
+.hcon button{
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
+} 
+
+#shopnow{
+    border: 1px solid grey;
+    transition: 0.5s;
+}
+
+#shopnow:hover{
+    background-color: black;
+    color: white;
+}
+
+#i1{
+    position: relative;
+}
+
+#content{
+    position: absolute;
+    bottom: 70px;
+    left: 400px;
+}
+
+#content2{
+    position: absolute;
+    bottom: 70px;
+    left: 40px;
+}
+#content3{
+    position: absolute;
+    top: 200px;
+    right: 90px;
+}
+
