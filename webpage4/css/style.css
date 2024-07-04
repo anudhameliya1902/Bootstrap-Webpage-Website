@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#btn1{
+    height: 40px;
+    width: 150px;
+}
+.back #h11{
+    padding-top: 350px;
+    color: black;
+}
+#img1{
+     height: 80px;
+}
+#box1:hover{
+    background-color: #23c081;
+    color: white;
+    
+}
+#p1{
+   
+    font-size: 16px;
+}
+#img3{
+    height: 100px;
+    width: 100px;
+}
+#img4{
+    height: 700px;
+    width: 1300px;
+}
+#img5{
+    height: 70px;
+    position: absolute;
+    top: 580px;
+    left: 900px;
+}
+#img6{
+    height: 70px;
+}
+.four{
+    margin-top: 100px;
+    background-color: white ;
+    
+}
+#box2{
+    background-color: white;
+    transition: .5s;
+}
+#box2:hover{
+    background-color: #f2c43b;
+}
+#p2{
+    font-size: 16px;
+}
+#h3{
+    font-size: 15px;
+}
+#footer{
+    background-color: #10151C;
+}
+.name{
+    background-color: #0C1016;
+}
+
+@media(max-width:576px){
+    .back #h11{
+        padding-top: 350px;
+        color: black;
+    }
+}
